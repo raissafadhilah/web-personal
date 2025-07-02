@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portofolio Raissa Fadhilah - Web Developer & Designer</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    .profile-card {
+      max-width: 350px;
+      background-color: #ffffff;
+      border-radius: 1rem;
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    }
+    .profile-pic {
+      border-radius: 9999px;
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border: 5px solid #f3f4f6;
+      margin-top: -60px;
+      background-color: #e5e7eb;
+    }
+    .fade-up {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: all 0.6s ease-in-out;
+    }
+    .fade-up.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body class="bg-gradient-to-br from-blue-50 via-white to-indigo-100 min-h-screen flex items-center justify-center py-12 px-4">
+  <main class="flex flex-col md:flex-row items-center md:items-start max-w-7xl w-full space-y-10 md:space-y-0 md:space-x-12">
+
+    <!-- Kartu Profil -->
+    <section class="profile-card p-8 flex flex-col items-center text-center md:text-left md:items-start">
+      <img src="photodiri.jpg" alt="Foto Raissa Fadhilah" class="profile-pic" />
+      <h1 class="mt-8 text-3xl font-bold text-gray-900">Raissa Fadhilah</h1>
+      <p class="mt-2 text-indigo-600 font-semibold uppercase text-sm">Web Developer & Web Designer</p>
+      <p class="mt-4 text-gray-700 italic max-w-xs text-sm">"Menciptakan situs web yang indah, responsif, dan penuh makna untuk pengalaman digital terbaik."</p>
+      <div class="mt-6 flex space-x-6 text-gray-600">
+        <a href="#" class="hover:text-indigo-600" aria-label="LinkedIn"><!-- LinkedIn icon --></a>
+        <a href="#" class="hover:text-indigo-600" aria-label="Twitter"><!-- Twitter icon --></a>
+        <a href="#" class="hover:text-indigo-600" aria-label="GitHub"><!-- GitHub icon --></a>
+      </div>
+    </section>
+
+    <!-- Konten Utama -->
+    <section class="w-full max-w-3xl px-4 md:px-0">
+      <h2 id="tentang" class="text-4xl font-extrabold text-gray-900">Halo 👋</h2>
+      <p class="text-lg mt-1 text-gray-700">Inilah siapa saya dan apa yang saya kerjakan</p>
+
+      <div class="mt-6 flex flex-col sm:flex-row gap-4">
+        <a href="#tentang" class="bg-indigo-500 text-white text-center font-semibold py-2 px-6 rounded-lg shadow-md hover:bg-indigo-600 transition">Tentang Saya</a>
+        <a href="#projects" class="bg-gray-300 text-gray-800 font-semibold py-2 px-6 rounded-lg shadow-md hover:bg-gray-400 transition">Lihat Proyek</a>
+        <a href="#skills" class="bg-gray-300 text-gray-800 font-semibold py-2 px-6 rounded-lg shadow-md hover:bg-gray-400 transition">Skill</a>
+      </div>
+
+      <article class="mt-8 text-gray-700 leading-relaxed space-y-4 text-justify">
+        <p>Saya adalah seorang web developer dan web designer yang berkomitmen menciptakan pengalaman digital yang unik, indah, dan fungsional. Saya mahasiswa Horizon University Indonesia jurusan Informatika, dengan menggabungkan logika pemrograman dan estetika visual, saya mengubah ide menjadi kenyataan digital yang menarik.</p>
+        <p>Saya percaya bahwa setiap pixel punya arti, dan setiap baris kode adalah karya seni. Dengan semangat terus belajar dan berinovasi, saya siap membantu Anda membangun solusi digital terbaik.</p>
+        <p><strong>Motto:</strong> <em>"Rancang dengan hati, koding dengan teliti."</em></p>
+      </article>
+
+      <!-- Proyek -->
+      <div id="projects" class="mt-16 space-y-8">
+        <h3 class="text-2xl font-bold text-gray-900 mb-4">📁 Proyek Saya</h3>
+
+        <!-- Proyek 1 -->
+        <div class="fade-up bg-white p-6 rounded-xl shadow-sm border border-gray-200 hover:shadow-md transition">
+          <h4 class="text-xl font-semibold text-indigo-700">🧥 Aplikasi Penjualan Barang Bekas (2025)</h4>
+          <p class="text-gray-700 mt-3 text-justify">
+            Saya mengembangkan <strong>Aplikasi Penjualan Barang Bekas</strong>, sebuah marketplace web sederhana untuk menjual produk fashion bekas seperti pakaian, sepatu, jaket, dan celana yang masih layak pakai.
+            Dibuat dengan <strong>Laravel 10</strong>, aplikasi ini memiliki dua peran utama: penjual dan pembeli, dengan tampilan bersih dan mudah digunakan.
+            Proyek ini bertujuan sebagai solusi digital jual-beli yang ringan, sekaligus menjadi media latihan bagi saya dalam membangun fitur CRUD, manajemen stok, session, UI/UX, serta penerapan Laravel dalam studi kasus nyata.
+          </p>
+        </div>
+
+        <!-- Proyek 2 -->
+        <div class="fade-up bg-white p-6 rounded-xl shadow-sm border border-gray-200 hover:shadow-md transition">
+          <h4 class="text-xl font-semibold text-indigo-700">📚 Aplikasi Perpustakaan Digital (2024)</h4>
+          <p class="text-gray-700 mt-3 text-justify">
+            Saya telah mengembangkan sebuah aplikasi web <strong>Perpustakaan Digital</strong> menggunakan <strong>Laravel 10</strong>, dilengkapi dengan fitur CRUD (Create, Read, Update, Delete) untuk memudahkan pengelolaan data.
+            Aplikasi ini dirancang khusus untuk memenuhi kebutuhan siswa dan siswi, sehingga mereka dapat dengan mudah mengakses, meminjam, dan mengelola informasi buku secara efisien dan terstruktur.
+          </p>
+        </div>
+
+        <!-- Proyek 3 -->
+        <div class="fade-up bg-white p-6 rounded-xl shadow-sm border border-gray-200 hover:shadow-md transition">
+          <h4 class="text-xl font-semibold text-indigo-700">🥬 Aplikasi Toko Sayur Lontong (2024)</h4>
+          <p class="text-gray-700 mt-3 text-justify">
+            Saya membuat <strong>Aplikasi Toko Sayur Lontong</strong> pada tahun 2024 menggunakan <strong>Laravel 10</strong>. Aplikasi ini dilengkapi dengan fitur CRUD dan dirancang untuk memudahkan penjual dalam mengelola dan menjual produknya, serta mempermudah pembeli dalam melakukan pembelian secara praktis dan efisien.
+          </p>
+        </div>
+      </div>
+
+      <!-- Skill -->
+      <section id="skills" class="mt-16">
+        <h3 class="text-2xl font-bold text-gray-900 mb-4">🎯 Skill</h3>
+        <ul class="grid grid-cols-2 sm:grid-cols-3 gap-4 text-gray-800 text-sm">
+          <li class="bg-white px-4 py-2 rounded-md shadow hover:bg-indigo-50 transition">HTML, CSS, JavaScript</li>
+          <li class="bg-white px-4 py-2 rounded-md shadow hover:bg-indigo-50 transition">Laravel 10 & PHP</li>
+          <li class="bg-white px-4 py-2 rounded-md shadow hover:bg-indigo-50 transition">MySQL</li>
+          <li class="bg-white px-4 py-2 rounded-md shadow hover:bg-indigo-50 transition">Canva</li>
+          <li class="bg-white px-4 py-2 rounded-md shadow hover:bg-indigo-50 transition">Figma</li>
+        </ul>
+      </section>
+    </section>
+  </main>
+
+  <script>
+    // Efek animasi saat scroll
+    const fadeEls = document.querySelectorAll('.fade-up');
+    const showOnScroll = () => {
+      fadeEls.forEach(el => {
+        const top = el.getBoundingClientRect().top;
+        const isVisible = top < window.innerHeight - 100;
+        if (isVisible) el.classList.add('show');
+      });
+    };
+    window.addEventListener('scroll', showOnScroll);
+    window.addEventListener('load', showOnScroll);
+  </script>
+</body>
+</html>
